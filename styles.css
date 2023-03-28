@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {  
+    --Body-Font:           'Karla', sans-serif;
+    --Cyan:               hsl(179, 62%, 43%);
+    --Light-Cyan:         hsl(179, 62%, 48%);
+    --Bright-Yellow:       hsl(71, 73%, 54%);
+    --Box-Shadow: hsla(0, 0%, 0%, 0.082);
+    --Light-Gray:         hsl(204, 43%, 93%);
+    --Grayish-Blue:       hsl(218, 22%, 67%);
+    --White:                hsl(0, 0%, 100%);
+}
+
+body {     
+    margin: 0;
+    padding: 0;   
+    font: 16px var(--Body-Font);
+    background-color: var(--Light-Gray);
+}
+
+.container {
+    width: 346px;
+    margin: 70px auto 20px;     
+    border-radius: 10px;  
+    overflow: hidden;            
+} 
+
+.community {    
+    box-sizing: border-box;
+    height: 295px;
+    padding: 20px 25px;
+    background-color: var(--White);  
+}
+.community-title--first{
+    color: var(--Cyan);
+    font-size: 1.4em;
+}
+.community-title--second {
+    margin: 25px 0 10px 0;
+    font-size: 1.1em;
+    color: var(--Bright-Yellow);
+}
+
+.community-description  {
+    margin-top: 16px;   
+    font: 500 0.97em var(--Body-Font);
+    line-height: 28px;
+    color: var(--Grayish-Blue);
+}
+
+.subscription {
+    box-sizing: border-box;
+    height: 250px;
+    padding: 10px 25px;
+    color: var(--Light-Gray);
+    background-color: var(--Cyan);        
+}
+
+.subscription-title {
+    margin-bottom: 18px;
+    font-size: 1.25em;
+}
+
+.pricing {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 15px;
+}
+
+.price{    
+    font: 700 2.4em var(--Body-Font);
+}
+
+.payment {
+    font: 500 1em var(--Body-Font) ;
+}
+
+.subscription-description {
+    margin-top: 8px;
+}
+
+.button {
+    width: 100%;
+    height: 48px;
+    margin-top: 14px;
+    border: none;
+    border-radius: 5px;
+    font: 700 1em var(--Body-Font);    
+    color: var(--Light-Gray);
+    background-color: var(--Bright-Yellow);
+    box-shadow: 1px 8px 8px 8px var(--Box-Shadow);
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.whyus {    
+    box-sizing: border-box;
+    height: 250px;
+    padding: 8px 25px 25px 25px;
+    color: var(--Light-Gray);
+    background-color: var(--Light-Cyan);    
+}
+.whyus-title {
+    font-size: 1.3em;
+}
+
+li {
+    margin-left: -40px;
+    font: 500 0.94em var(--Body-Font);
+    line-height: 22px;
+    list-style-type: none;
+}
+
+.attribution {  
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+/* Design: desktop and large devices, viewport-1440px */
+@media only screen and (min-width: 680px){
+    .container {
+        display: grid;
+        grid-template-columns:  1fr 1fr;
+        width: 636px;
+        height: 476px;
+        margin: 160px auto 20px;
+    }
+
+    .community {
+        grid-column: 1 / 3;
+        padding: 20px 35px 35px 35px;
+        height: 218px;
+    }
+
+    .community-title--first {
+        font-size: 1.45em;
+    }   
+
+    .community-title--second {
+        font-size: 1.1em;
+    }
+
+    .community-description {
+        font-size: 1em;
+        line-height: 30px;
+        margin-top: 8px;        
+    }
+
+    .subscription {
+        height: 258px;
+        padding: 20px 40px 40px 40px;
+    }
+
+    .subscription-title{
+        font-size: 1.1em;
+    }
+
+    .subcription-description {
+        font-size: 0.9em;
+    }
+
+    .whyus {
+        height: 258px;
+        padding: 20px 40px 40px 40px;
+    }
+}
+
